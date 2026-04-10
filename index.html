@@ -768,7 +768,7 @@
         await fetch(APPS_SCRIPT_URL, {
           method: 'POST',
           mode: 'no-cors',
-          headers: { 'Content-Type': 'application/json' },
+          headers: { 'Content-Type': 'text/plain' },
           body: JSON.stringify({ name, email, consent: true, source: 'landing-page' })
         });
         window.location.href = 'thank-you.html';
@@ -783,4 +783,3 @@
 
 </body>
 </html>
-
